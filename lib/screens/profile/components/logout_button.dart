@@ -5,9 +5,9 @@ import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:team_shaikh_app/database/auth_helper.dart';
-import 'package:team_shaikh_app/database/models/client_model.dart';
-import 'package:team_shaikh_app/screens/utils/resources.dart';
+import 'package:agq_app/database/auth_helper.dart';
+import 'package:agq_app/database/models/client_model.dart';
+import 'package:agq_app/screens/utils/resources.dart';
 
 class LogoutButton extends StatefulWidget {
   final Client client;

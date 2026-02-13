@@ -4,7 +4,7 @@ import 'dart:io';
 import 'package:device_info_plus/device_info_plus.dart';
 import 'package:flutter/material.dart';
 import 'package:local_auth/local_auth.dart';
-import 'package:team_shaikh_app/screens/dashboard/dashboard.dart';
+import 'package:agq_app/screens/dashboard/dashboard.dart';
 import 'dart:developer';
 
 void main() => runApp(const MyApp());

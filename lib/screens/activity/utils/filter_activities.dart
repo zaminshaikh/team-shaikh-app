@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:team_shaikh_app/database/models/activity_model.dart';
+import 'package:agq_app/database/models/activity_model.dart';
 
 /// Filters the given [activities] by type, recipients, parent names, and date range.
 void filterActivities(

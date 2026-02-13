@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:team_shaikh_app/screens/activity/activity.dart';
-import 'package:team_shaikh_app/screens/analytics/analytics.dart';
-import 'package:team_shaikh_app/screens/dashboard/dashboard.dart';
-import 'package:team_shaikh_app/screens/profile/profile.dart';
+import 'package:agq_app/screens/activity/activity.dart';
+import 'package:agq_app/screens/analytics/analytics.dart';
+import 'package:agq_app/screens/dashboard/dashboard.dart';
+import 'package:agq_app/screens/profile/profile.dart';
 
 enum NavigationItem { dashboard, analytics, activity, profile }
 

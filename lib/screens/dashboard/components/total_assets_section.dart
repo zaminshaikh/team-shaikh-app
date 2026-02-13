@@ -2,9 +2,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:team_shaikh_app/database/models/client_model.dart';
-import 'package:team_shaikh_app/screens/utils/resources.dart';
-import 'package:team_shaikh_app/screens/utils/utilities.dart';
+import 'package:agq_app/database/models/client_model.dart';
+import 'package:agq_app/screens/utils/resources.dart';
+import 'package:agq_app/screens/utils/utilities.dart';
 
 class TotalAssetsSection extends StatelessWidget {
 

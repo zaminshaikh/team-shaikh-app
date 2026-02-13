@@ -6,18 +6,18 @@ import 'package:provider/provider.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:sign_in_with_apple/sign_in_with_apple.dart';
-import 'package:team_shaikh_app/components/alert_dialog.dart';
-import 'package:team_shaikh_app/components/progress_indicator.dart';
-import 'package:team_shaikh_app/database/auth_helper.dart';
+import 'package:agq_app/components/alert_dialog.dart';
+import 'package:agq_app/components/progress_indicator.dart';
+import 'package:agq_app/database/auth_helper.dart';
 import 'dart:developer';
-import 'package:team_shaikh_app/database/database.dart';
-import 'package:team_shaikh_app/screens/authenticate/create_account/components/email_verification_dialog.dart';
-import 'package:team_shaikh_app/screens/authenticate/create_account/components/password_security_indicator.dart';
-import 'package:team_shaikh_app/screens/authenticate/create_account/components/password_validation.dart';
-import 'package:team_shaikh_app/screens/authenticate/login/login.dart';
-import 'package:team_shaikh_app/screens/authenticate/utils/app_state.dart';
-import 'package:team_shaikh_app/screens/authenticate/utils/google_auth_service.dart';
-import 'package:team_shaikh_app/screens/authenticate/utils/apple_auth_service.dart';
+import 'package:agq_app/database/database.dart';
+import 'package:agq_app/screens/authenticate/create_account/components/email_verification_dialog.dart';
+import 'package:agq_app/screens/authenticate/create_account/components/password_security_indicator.dart';
+import 'package:agq_app/screens/authenticate/create_account/components/password_validation.dart';
+import 'package:agq_app/screens/authenticate/login/login.dart';
+import 'package:agq_app/screens/authenticate/utils/app_state.dart';
+import 'package:agq_app/screens/authenticate/utils/google_auth_service.dart';
+import 'package:agq_app/screens/authenticate/utils/apple_auth_service.dart';
 
 /// A StatefulWidget representing the Create Account page.
 class CreateAccountPage extends StatefulWidget {

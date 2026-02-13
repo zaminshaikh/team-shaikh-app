@@ -4,8 +4,8 @@ import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_phoenix/flutter_phoenix.dart';
 import 'package:provider/provider.dart';
-import 'package:team_shaikh_app/screens/authenticate/utils/app_state.dart';
-import 'package:team_shaikh_app/screens/utils/resources.dart';
+import 'package:agq_app/screens/authenticate/utils/app_state.dart';
+import 'package:agq_app/screens/utils/resources.dart';
 
 class NoInternetScreen extends StatefulWidget {
   const NoInternetScreen({super.key});

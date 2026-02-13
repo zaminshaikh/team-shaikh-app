@@ -12,31 +12,32 @@ import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:agq_app/firebase_options.dart';
 
 // Third-party packages
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:team_shaikh_app/components/no_connection.dart';
-import 'package:team_shaikh_app/components/progress_indicator.dart';
+import 'package:agq_app/components/no_connection.dart';
+import 'package:agq_app/components/progress_indicator.dart';
 
 // Local packages
-import 'package:team_shaikh_app/database/models/client_model.dart';
-import 'package:team_shaikh_app/database/database.dart';
-import 'package:team_shaikh_app/screens/authenticate/create_account/create_account.dart';
-import 'package:team_shaikh_app/screens/authenticate/email_verification_screen.dart';
-import 'package:team_shaikh_app/screens/activity/activity.dart';
-import 'package:team_shaikh_app/screens/analytics/analytics.dart';
-import 'package:team_shaikh_app/screens/authenticate/initial_face_id.dart';
-import 'package:team_shaikh_app/screens/authenticate/onboarding.dart';
-import 'package:team_shaikh_app/screens/authenticate/login/login.dart';
-import 'package:team_shaikh_app/screens/authenticate/login/forgot_password.dart';
-import 'package:team_shaikh_app/screens/authenticate/utils/faceid.dart';
-import 'package:team_shaikh_app/screens/authenticate/utils/app_state.dart';
-import 'package:team_shaikh_app/screens/dashboard/dashboard.dart';
-import 'package:team_shaikh_app/screens/notifications/notifications.dart';
-import 'package:team_shaikh_app/screens/profile/profile.dart';
-import 'package:team_shaikh_app/screens/utils/push_notification.dart';
-import 'package:team_shaikh_app/screens/utils/utilities.dart';
+import 'package:agq_app/database/models/client_model.dart';
+import 'package:agq_app/database/database.dart';
+import 'package:agq_app/screens/authenticate/create_account/create_account.dart';
+import 'package:agq_app/screens/authenticate/email_verification_screen.dart';
+import 'package:agq_app/screens/activity/activity.dart';
+import 'package:agq_app/screens/analytics/analytics.dart';
+import 'package:agq_app/screens/authenticate/initial_face_id.dart';
+import 'package:agq_app/screens/authenticate/onboarding.dart';
+import 'package:agq_app/screens/authenticate/login/login.dart';
+import 'package:agq_app/screens/authenticate/login/forgot_password.dart';
+import 'package:agq_app/screens/authenticate/utils/faceid.dart';
+import 'package:agq_app/screens/authenticate/utils/app_state.dart';
+import 'package:agq_app/screens/dashboard/dashboard.dart';
+import 'package:agq_app/screens/notifications/notifications.dart';
+import 'package:agq_app/screens/profile/profile.dart';
+import 'package:agq_app/screens/utils/push_notification.dart';
+import 'package:agq_app/screens/utils/utilities.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -64,7 +65,9 @@ Future<void> _initializeServices() async {
   await ScreenUtil.ensureScreenSize();
 
   // Initialize Firebase
-  await Firebase.initializeApp();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
 
   // Initialize push notifications
   await PushNotificationService().initialize();

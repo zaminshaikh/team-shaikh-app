@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:team_shaikh_app/screens/activity/utils/sort_activities.dart';
-import 'package:team_shaikh_app/screens/utils/resources.dart';
+import 'package:agq_app/screens/activity/utils/sort_activities.dart';
+import 'package:agq_app/screens/utils/resources.dart';
 
 /// A modal widget for selecting sort options.
 class ActivitySortModal extends StatelessWidget {

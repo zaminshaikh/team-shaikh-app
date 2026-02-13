@@ -5,12 +5,12 @@ import 'package:crypto/crypto.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:sign_in_with_apple/sign_in_with_apple.dart';
-import 'package:team_shaikh_app/components/alert_dialog.dart';
-import 'package:team_shaikh_app/database/database.dart';
-import 'package:team_shaikh_app/screens/authenticate/utils/app_state.dart';
+import 'package:agq_app/components/alert_dialog.dart';
+import 'package:agq_app/database/database.dart';
+import 'package:agq_app/screens/authenticate/utils/app_state.dart';
 import 'package:provider/provider.dart';
 
-import 'package:team_shaikh_app/database/auth_helper.dart';
+import 'package:agq_app/database/auth_helper.dart';
 
 class AppleAuthService {
   /// Sign in with Apple (without CID - for login)

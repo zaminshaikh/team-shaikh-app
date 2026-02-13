@@ -1,13 +1,13 @@
 // notification_card.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:team_shaikh_app/screens/profile/pages/documents.dart';
+import 'package:agq_app/screens/profile/pages/documents.dart';
 import 'package:timeago/timeago.dart' as timeago;
-import 'package:team_shaikh_app/database/models/client_model.dart';
-import 'package:team_shaikh_app/database/models/notification_model.dart';
-import 'package:team_shaikh_app/database/database.dart';
-import 'package:team_shaikh_app/screens/utils/resources.dart';
-import 'package:team_shaikh_app/screens/activity/activity.dart';
+import 'package:agq_app/database/models/client_model.dart';
+import 'package:agq_app/database/models/notification_model.dart';
+import 'package:agq_app/database/database.dart';
+import 'package:agq_app/screens/utils/resources.dart';
+import 'package:agq_app/screens/activity/activity.dart';
 // Update with the correct import path
 
 class NotificationCard extends StatelessWidget {

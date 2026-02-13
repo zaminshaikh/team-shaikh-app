@@ -9,12 +9,12 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
 import 'package:share_plus/share_plus.dart';
-import 'package:team_shaikh_app/components/progress_indicator.dart';
-import 'package:team_shaikh_app/database/models/client_model.dart';
-import 'package:team_shaikh_app/screens/utils/resources.dart';
-import 'package:team_shaikh_app/screens/profile/utils/PDFPreview.dart';
-import 'package:team_shaikh_app/screens/profile/utils/downloadmethod.dart';
-import 'package:team_shaikh_app/screens/utils/utilities.dart';
+import 'package:agq_app/components/progress_indicator.dart';
+import 'package:agq_app/database/models/client_model.dart';
+import 'package:agq_app/screens/utils/resources.dart';
+import 'package:agq_app/screens/profile/utils/PDFPreview.dart';
+import 'package:agq_app/screens/profile/utils/downloadmethod.dart';
+import 'package:agq_app/screens/utils/utilities.dart';
 
 
 class DocumentsPage extends StatefulWidget {

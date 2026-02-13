@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:team_shaikh_app/components/assets_structure_section.dart';
-import 'package:team_shaikh_app/components/custom_bottom_navigation_bar.dart';
-import 'package:team_shaikh_app/components/progress_indicator.dart';
-import 'package:team_shaikh_app/database/models/client_model.dart';
-import 'package:team_shaikh_app/screens/analytics/components/analytics_app_bar.dart';
-import 'package:team_shaikh_app/screens/analytics/components/line_chart.dart';
+import 'package:agq_app/components/assets_structure_section.dart';
+import 'package:agq_app/components/custom_bottom_navigation_bar.dart';
+import 'package:agq_app/components/progress_indicator.dart';
+import 'package:agq_app/database/models/client_model.dart';
+import 'package:agq_app/screens/analytics/components/analytics_app_bar.dart';
+import 'package:agq_app/screens/analytics/components/line_chart.dart';
 
 
 class AnalyticsPage extends StatefulWidget {

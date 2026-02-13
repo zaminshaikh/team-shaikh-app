@@ -2,7 +2,7 @@
 // ignore_for_file: library_private_types_in_public_api, non_constant_identifier_names, use_build_context_synchronously
 
 import 'package:flutter/material.dart';
-import 'package:team_shaikh_app/screens/authenticate/login/login.dart';
+import 'package:agq_app/screens/authenticate/login/login.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'dart:developer';
 

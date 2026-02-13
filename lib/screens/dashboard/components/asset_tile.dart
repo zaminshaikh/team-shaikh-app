@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:team_shaikh_app/database/models/assets_model.dart';
-import 'package:team_shaikh_app/screens/utils/utilities.dart';
+import 'package:agq_app/database/models/assets_model.dart';
+import 'package:agq_app/screens/utils/utilities.dart';
 
 // ignore: constant_identifier_names
 enum FundName { AGQ, AK1 }

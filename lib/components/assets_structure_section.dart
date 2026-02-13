@@ -3,9 +3,9 @@
 import 'package:flutter/material.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:team_shaikh_app/database/models/client_model.dart';
-import 'package:team_shaikh_app/screens/utils/resources.dart';
-import 'package:team_shaikh_app/screens/utils/utilities.dart';
+import 'package:agq_app/database/models/client_model.dart';
+import 'package:agq_app/screens/utils/resources.dart';
+import 'package:agq_app/screens/utils/utilities.dart';
 
 class AssetsStructureSection extends StatelessWidget {
   final Client client;

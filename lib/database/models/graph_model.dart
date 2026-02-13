@@ -1,4 +1,4 @@
-import 'package:team_shaikh_app/database/models/graph_point_model.dart';
+import 'package:agq_app/database/models/graph_point_model.dart';
 
 /// Represents a collection of GraphPoints associated with a specific account.
 class Graph {

@@ -2,8 +2,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:team_shaikh_app/components/progress_indicator.dart';
-import 'package:team_shaikh_app/database/models/client_model.dart';
+import 'package:agq_app/components/progress_indicator.dart';
+import 'package:agq_app/database/models/client_model.dart';
 
 class ProfilesPage extends StatefulWidget {
   const ProfilesPage({super.key});

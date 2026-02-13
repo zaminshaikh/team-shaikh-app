@@ -4,7 +4,7 @@ import 'dart:async'; // Import for Timer
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart'; // Import for FirebaseAuth
 import 'package:flutter_svg/svg.dart';
-import 'package:team_shaikh_app/screens/utils/resources.dart';
+import 'package:agq_app/screens/utils/resources.dart';
 
 class CustomProgressIndicator extends StatelessWidget {
   const CustomProgressIndicator({super.key});

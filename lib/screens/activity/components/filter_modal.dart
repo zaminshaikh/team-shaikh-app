@@ -1,8 +1,8 @@
 // activity_filter_modal.dart
 
 import 'package:flutter/material.dart';
-import 'package:team_shaikh_app/screens/utils/resources.dart';
-import 'package:team_shaikh_app/screens/utils/utilities.dart';
+import 'package:agq_app/screens/utils/resources.dart';
+import 'package:agq_app/screens/utils/utilities.dart';
 
 /// A modal widget for filtering activities.
 class ActivityFilterModal extends StatefulWidget {

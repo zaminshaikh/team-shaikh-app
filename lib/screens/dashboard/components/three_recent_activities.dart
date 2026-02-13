@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:team_shaikh_app/database/models/activity_model.dart';
-import 'package:team_shaikh_app/screens/activity/activity.dart';
-import 'package:team_shaikh_app/screens/dashboard/components/activity_card_item.dart';
-import 'package:team_shaikh_app/screens/utils/resources.dart';
+import 'package:agq_app/database/models/activity_model.dart';
+import 'package:agq_app/screens/activity/activity.dart';
+import 'package:agq_app/screens/dashboard/components/activity_card_item.dart';
+import 'package:agq_app/screens/utils/resources.dart';
 
 class ActivityTilesSection extends StatefulWidget {
   final List<Activity> activities;

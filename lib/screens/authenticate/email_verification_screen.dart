@@ -4,10 +4,10 @@ import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:provider/provider.dart';
-import 'package:team_shaikh_app/components/alert_dialog.dart';
-import 'package:team_shaikh_app/components/progress_indicator.dart';
-import 'package:team_shaikh_app/database/auth_helper.dart';
-import 'package:team_shaikh_app/screens/authenticate/utils/app_state.dart';
+import 'package:agq_app/components/alert_dialog.dart';
+import 'package:agq_app/components/progress_indicator.dart';
+import 'package:agq_app/database/auth_helper.dart';
+import 'package:agq_app/screens/authenticate/utils/app_state.dart';
 
 class EmailVerificationScreen extends StatefulWidget {
   const EmailVerificationScreen({super.key});

@@ -1,8 +1,8 @@
 // ignore_for_file: deprecated_member_use
 
+import 'package:agq_app/screens/utils/resources.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:team_shaikh_app/screens/utils/resources.dart';
 
 /// A class that provides a custom alert dialog.
 ///

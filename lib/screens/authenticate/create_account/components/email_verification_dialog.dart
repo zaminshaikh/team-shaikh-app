@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:team_shaikh_app/components/progress_indicator.dart';
+import 'package:agq_app/components/progress_indicator.dart';
 
 /// A StatefulWidget representing the Email Verification dialog.
 class EmailVerificationDialog extends StatefulWidget {

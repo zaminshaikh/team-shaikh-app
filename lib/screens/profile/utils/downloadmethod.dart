@@ -4,7 +4,7 @@ import 'package:firebase_storage/firebase_storage.dart';
 import 'package:path_provider/path_provider.dart';
 import 'dart:io';
 import 'package:http/http.dart' as http;
-import 'package:team_shaikh_app/screens/utils/utilities.dart';
+import 'package:agq_app/screens/utils/utilities.dart';
 
 
 void downloadToFiles(String documentName) async {

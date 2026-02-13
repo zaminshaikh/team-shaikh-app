@@ -4,11 +4,11 @@ import 'package:flutter/material.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:intl/intl.dart';
-import 'package:team_shaikh_app/database/models/client_model.dart';
-import 'package:team_shaikh_app/database/models/graph_point_model.dart';
-import 'package:team_shaikh_app/database/models/graph_model.dart'; // Import Graph class
-import 'package:team_shaikh_app/screens/utils/resources.dart';
-import 'package:team_shaikh_app/screens/analytics/utils/analytics_utilities.dart';
+import 'package:agq_app/database/models/client_model.dart';
+import 'package:agq_app/database/models/graph_point_model.dart';
+import 'package:agq_app/database/models/graph_model.dart'; // Import Graph class
+import 'package:agq_app/screens/utils/resources.dart';
+import 'package:agq_app/screens/analytics/utils/analytics_utilities.dart';
 
 /// A widget that displays the line chart section in the Analytics page.
 ///

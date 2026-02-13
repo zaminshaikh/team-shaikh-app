@@ -1,7 +1,7 @@
 // Implement sorting on activities based on the user's selection (defaulted to _sorting = 'new-to-old')
 import 'dart:developer';
 
-import 'package:team_shaikh_app/database/models/activity_model.dart';
+import 'package:agq_app/database/models/activity_model.dart';
 
 enum SortOrder { newToOld, oldToNew, lowToHigh, highToLow }
 

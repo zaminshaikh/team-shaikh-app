@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:team_shaikh_app/database/models/client_model.dart';
-import 'package:team_shaikh_app/screens/notifications/notifications.dart';
-import 'package:team_shaikh_app/screens/utils/resources.dart';
+import 'package:agq_app/database/models/client_model.dart';
+import 'package:agq_app/screens/notifications/notifications.dart';
+import 'package:agq_app/screens/utils/resources.dart';
 
 class ActivityAppBar extends StatefulWidget implements PreferredSizeWidget {
   final Client client;

@@ -4,16 +4,16 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:team_shaikh_app/components/custom_bottom_navigation_bar.dart';
-import 'package:team_shaikh_app/components/progress_indicator.dart';
-import 'package:team_shaikh_app/database/models/activity_model.dart';
-import 'package:team_shaikh_app/database/models/client_model.dart';
-import 'package:team_shaikh_app/screens/authenticate/utils/app_state.dart';
-import 'package:team_shaikh_app/components/assets_structure_section.dart';
-import 'package:team_shaikh_app/screens/dashboard/components/dashboard_app_bar.dart';
-import 'package:team_shaikh_app/screens/dashboard/components/total_assets_section.dart';
-import 'package:team_shaikh_app/screens/dashboard/components/user_breakdown_section.dart';
-import 'package:team_shaikh_app/screens/dashboard/components/three_recent_activities.dart';
+import 'package:agq_app/components/custom_bottom_navigation_bar.dart';
+import 'package:agq_app/components/progress_indicator.dart';
+import 'package:agq_app/database/models/activity_model.dart';
+import 'package:agq_app/database/models/client_model.dart';
+import 'package:agq_app/screens/authenticate/utils/app_state.dart';
+import 'package:agq_app/components/assets_structure_section.dart';
+import 'package:agq_app/screens/dashboard/components/dashboard_app_bar.dart';
+import 'package:agq_app/screens/dashboard/components/total_assets_section.dart';
+import 'package:agq_app/screens/dashboard/components/user_breakdown_section.dart';
+import 'package:agq_app/screens/dashboard/components/three_recent_activities.dart';
 
 class DashboardPage extends StatefulWidget {
   final bool fromFaceIdPage;

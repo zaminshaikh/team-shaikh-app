@@ -2,8 +2,8 @@ import 'dart:developer';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
-import 'package:team_shaikh_app/components/alert_dialog.dart';
-import 'package:team_shaikh_app/database/database.dart';
+import 'package:agq_app/components/alert_dialog.dart';
+import 'package:agq_app/database/database.dart';
 
 /// Deletes any user currently in the Firebase Auth buffer.
 Future<void> deleteUserInBuffer() async {

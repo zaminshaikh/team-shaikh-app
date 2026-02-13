@@ -1,8 +1,8 @@
 // ignore_for_file: library_private_types_in_public_api
 
 import 'package:flutter/material.dart';
-import 'package:team_shaikh_app/screens/authenticate/create_account/create_account.dart';
-import 'package:team_shaikh_app/screens/authenticate/login/login.dart'; // Adjust the import path as necessary
+import 'package:agq_app/screens/authenticate/create_account/create_account.dart';
+import 'package:agq_app/screens/authenticate/login/login.dart'; // Adjust the import path as necessary
 import 'package:local_auth/local_auth.dart';
 
 class OnboardingPage extends StatefulWidget {

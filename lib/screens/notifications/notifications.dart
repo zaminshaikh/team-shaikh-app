@@ -2,12 +2,12 @@
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:team_shaikh_app/components/progress_indicator.dart';
-import 'package:team_shaikh_app/database/models/client_model.dart';
-import 'package:team_shaikh_app/database/models/notification_model.dart';
-import 'package:team_shaikh_app/screens/notifications/components/mark_all_read_button.dart';
-import 'package:team_shaikh_app/screens/notifications/components/notification_card.dart';
-import 'package:team_shaikh_app/screens/notifications/components/notifications_app_bar.dart';
+import 'package:agq_app/components/progress_indicator.dart';
+import 'package:agq_app/database/models/client_model.dart';
+import 'package:agq_app/database/models/notification_model.dart';
+import 'package:agq_app/screens/notifications/components/mark_all_read_button.dart';
+import 'package:agq_app/screens/notifications/components/notification_card.dart';
+import 'package:agq_app/screens/notifications/components/notifications_app_bar.dart';
 
 class NotificationPage extends StatefulWidget {
   const NotificationPage({super.key});

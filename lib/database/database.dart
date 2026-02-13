@@ -3,13 +3,13 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:cloud_functions/cloud_functions.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter/material.dart';
-import 'package:team_shaikh_app/database/models/activity_model.dart';
-import 'package:team_shaikh_app/database/models/graph_point_model.dart';
-import 'package:team_shaikh_app/database/models/notification_model.dart';
-import 'package:team_shaikh_app/database/models/assets_model.dart';
-import 'package:team_shaikh_app/database/models/client_model.dart';
+import 'package:agq_app/database/models/activity_model.dart';
+import 'package:agq_app/database/models/graph_point_model.dart';
+import 'package:agq_app/database/models/notification_model.dart';
+import 'package:agq_app/database/models/assets_model.dart';
+import 'package:agq_app/database/models/client_model.dart';
 import 'package:rxdart/rxdart.dart';
-import 'package:team_shaikh_app/screens/utils/utilities.dart';
+import 'package:agq_app/screens/utils/utilities.dart';
 
 
 /// A service class for interacting with the Firestore database.
