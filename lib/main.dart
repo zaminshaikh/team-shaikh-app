@@ -103,8 +103,6 @@ class MyApp extends StatefulWidget {
 class MyAppState extends State<MyApp> with WidgetsBindingObserver {
   final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
   late final Stream<Client?> clientStream;
-  String? selectedTimeOption;
-  double selectedTimeInMinutes = 1.0; // Default value
   Timer? _inactivityTimer;
   bool _isAppLockEnabled = false;
 
@@ -112,28 +110,14 @@ class MyAppState extends State<MyApp> with WidgetsBindingObserver {
   void initState() {
     super.initState();
 
-    // Add this widget as an observer to the WidgetsBinding instance
     WidgetsBinding.instance.addObserver(this);
 
-    // Reset navigation flags when the app initializes
     WidgetsBinding.instance.addPostFrameCallback((_) {
       final appState = Provider.of<AuthState>(context, listen: false);
       appState.setHasNavigatedToFaceIDPage(false);
     });
 
-    // Load the selected time option and app lock state
-    _loadSelectedTimeOption();
     _loadAppLockState();
-  }
-
-  Future<void> _loadSelectedTimeOption() async {
-    final prefs = await SharedPreferences.getInstance();
-    setState(() {
-      selectedTimeOption = prefs.getString('selectedTimeOption') ?? '1 minute';
-      selectedTimeInMinutes = _getTimeInMinutes(selectedTimeOption!);
-      log('Selected time option: $selectedTimeOption');
-      log('Timer duration in minutes: $selectedTimeInMinutes');
-    });
   }
 
   Future<void> _loadAppLockState() async {
@@ -151,23 +135,6 @@ class MyAppState extends State<MyApp> with WidgetsBindingObserver {
     } else {
       appState.setInitiallyAuthenticated(false);
       log('App lock is enabled. Setting initiallyAuthenticated to false.');
-    }
-  }
-
-  double _getTimeInMinutes(String timeOption) {
-    switch (timeOption) {
-      case 'Immediately':
-        return 0.0;
-      case '1 minute':
-        return 1.0;
-      case '2 minute':
-        return 2.0;
-      case '5 minute':
-        return 5.0;
-      case '10 minute':
-        return 10.0;
-      default:
-        return 1.0; // Default to 1 minute if none match
     }
   }
 
@@ -224,11 +191,8 @@ class MyAppState extends State<MyApp> with WidgetsBindingObserver {
       // log when all conditions are met
       log('All conditions met: Navigating to FaceIdPage after timer');
   
-      // Start a timer for the selected amount of time
       _inactivityTimer?.cancel();
-      log('Timer cancelled');
-      _inactivityTimer = Timer(Duration(minutes: appState.selectedTimeInMinutes.toInt()), () {
-        // Navigate to FaceIdPage when the timer completes
+      _inactivityTimer = Timer(Duration.zero, () {
         appState.setHasNavigatedToFaceIDPage(true);
         navigatorKey.currentState?.pushReplacement(
           PageRouteBuilder(
@@ -237,7 +201,6 @@ class MyAppState extends State<MyApp> with WidgetsBindingObserver {
           ),
         );
       });
-      log('Timer started for ${appState.selectedTimeInMinutes} minutes');
     } else {
       if (state != AppLifecycleState.paused &&
           state != AppLifecycleState.inactive &&
